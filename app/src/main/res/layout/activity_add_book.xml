@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.AddBookActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_addBook_Name"
+        android:hint="Tên sách: "
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/spinner"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_addBook_author"
+        android:hint="Tên Tác giả: "
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_addbook"
+        android:hint="Nhà xuất bản: "
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_bill_amount"
+        android:hint="Số lượng: "
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_bill_price"
+        android:hint="Giá bán: "
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_book_date"
+        android:hint="Ngày nhập: "
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:background="#A6D3F6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_bill_save"
+        android:text="Thêm"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:background="#A6D3F6"
+        android:id="@+id/btn_bill_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Hủy"/>
+
+
+</LinearLayout>

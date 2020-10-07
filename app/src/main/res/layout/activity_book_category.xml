@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.BookCategoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Danh mục sách"
+            app:navigationIcon="@drawable/ic_back_white"
+            app:titleTextColor="#ffff"
+            android:background="#03A9F4"
+            android:id="@+id/toolbar">
+            <ImageView
+                android:id="@+id/ic_addBook"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/ic_add_circle_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_search"
+        android:hint="Nhập tên thể loại"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_search" />
+    
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lvBookCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

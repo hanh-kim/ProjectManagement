@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.SignUpActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_su_username"
+        android:hint="Tên đăng nhập:  (không quá 20 kí tự:   kimhanh)"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:maxLength="20"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_su_fullname"
+        android:hint="Họ tên:  (không quá 50 kí tự:   phung kim hanh)"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:maxLength="20"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_su_phoneNumber"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Số điện thoại:  ( 0967898765 ) tối đa 10 chữ số" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_su_email"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email: (example123@gmail.com)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:passwordToggleEnabled="true"
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_su_password"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:maxHeight="15dp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:hint="Mật khẩu: (dài 5 - 15 kí tự chữ và số:  hanh12345)" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:passwordToggleEnabled="true"
+        app:errorTextColor="#ff0000"
+        android:textColorHint="#021F67"
+        android:id="@+id/edtL_su_confirmPassword"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="15dp"
+            android:maxLength="15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Nhập lại mật khẩu" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:background="#A6D3F6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ok_signUp"
+        android:text="Đăng kí"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:background="#A6D3F6"
+        android:id="@+id/btn_cancel_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Hủy"/>
+
+
+</LinearLayout>

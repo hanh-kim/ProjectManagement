@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectmanagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.AddUserActivity"
+            android:label="Thêm người dùng"
+            android:parentActivityName=".UI.UserListActivity"
+            ></activity>
+        <activity
+            android:name=".UI.UpdateBillActivity"
+            android:label="Sửa đổi thông tin hóa đơn" />
+        <activity
+            android:name=".UI.BookCategoryDetailActivity"
+            android:label="Thông tin thể loại"
+            android:parentActivityName=".UI.BookCategoryActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.BookDetailActivity"
+            android:label="Thông tin sách"
+            android:parentActivityName=".UI.BookActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.UpdateBookActivity"
+            android:label="Cập nhật thông tin sách"
+            android:parentActivityName=".UI.BookActivity" />
+        <activity
+            android:name=".UI.AddBillActivity"
+            android:label="Thêm hóa đơn"
+            android:parentActivityName=".UI.BillCategoryActivity" />
+        <activity
+            android:name=".UI.UserListActivity"
+            android:label="Quản lí người dùng"
+            android:parentActivityName=".UI.HomeActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.StatisticActivity"
+            android:label="Thống kê"
+            android:parentActivityName=".UI.HomeActivity" />
+        <activity
+            android:name=".UI.BillCategoryActivity"
+            android:parentActivityName=".UI.HomeActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.BillActivity"
+            android:parentActivityName=".UI.BillCategoryActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.AccountActivity"
+            android:label="Thông tin tài khoản"
+            android:parentActivityName=".UI.HomeActivity" />
+        <activity
+            android:name=".UI.BookActivity"
+            android:label="Kho sách"
+            android:parentActivityName=".UI.HomeActivity"
+            android:theme="@style/ThemeNoAc" />
+
+        <activity android:name=".UI.InfoBookActivity" />
+
+        <activity
+            android:name=".UI.HomeActivity"
+            android:label="Trang chủ" />
+        <activity
+            android:name=".UI.UpdateBookCategoryActivity"
+            android:label="Cập nhật thể loại"
+            android:parentActivityName=".UI.BookCategoryActivity" />
+        <activity
+            android:name=".UI.AddBookCategoryActivity"
+            android:label="Thêm thể loại"
+            android:parentActivityName=".UI.BookCategoryActivity" />
+        <activity
+            android:name=".UI.ChangePasswordActivity"
+            android:label="Đổi mật khẩu"
+            android:parentActivityName=".UI.AccountActivity" />
+        <activity
+            android:name=".UI.BookCategoryActivity"
+            android:label=" Danh mục sách"
+            android:parentActivityName=".UI.HomeActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.AddBookActivity"
+            android:label="Thêm sách"
+            android:parentActivityName=".UI.BookActivity" />
+        <activity
+            android:name=".UI.SignUpActivity"
+            android:label="Đăng kí"
+            android:parentActivityName=".UI.LoginActivity" /> <!-- " -->
+        <activity
+            android:name=".UI.LoginActivity"
+            android:theme="@style/ThemeNoAc" />
+        <activity
+            android:name=".UI.MainActivity"
+            android:theme="@style/ThemeNoAc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
